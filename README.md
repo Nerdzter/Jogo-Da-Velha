@@ -2,19 +2,6 @@
 
 Este é um projeto simples de jogo da velha, desenvolvido com HTML, CSS e JavaScript. O jogo permite que dois jogadores entrem com seus nomes e joguem contra si mesmos, exibindo um confete para o vencedor.
 
-## Estrutura do Projeto
-
-A estrutura do projeto é a seguinte:
-
-├── index.html
-├── assets
-│ ├── css
-│ │ └── style.css
-│ └── js
-│ └── script.js
-└── README.md
-
-
 - `index.html`: Arquivo principal HTML que define a estrutura da página e a lógica do jogo.
 - `assets/css/style.css`: Arquivo de estilos CSS para a formatação e design da interface do usuário.
 - `assets/js/script.js`: Arquivo JavaScript que contém a lógica do jogo e a interação do usuário.
@@ -27,8 +14,9 @@ A estrutura do projeto é a seguinte:
    git clone https://github.com/Nerdzter/Jogo-Da-Velha.git
 
 2. **Acesse o diretório do projeto**
-    
-    cd Jogo-Da-Velha
+
+    ```bash  
+  cd Jogo-Da-Velha
 
 3. **Abra o arquivo index.html em um navegador**
 
