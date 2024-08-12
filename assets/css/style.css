@@ -1,15 +1,33 @@
+/* Reset básico para garantir uma aparência consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #1e1e1e; /* Fundo escuro para um visual futurista */
+    color: #e0e0e0; /* Cor de texto clara */
 }
 
 .container {
     text-align: center;
+    background: #2c2c2c; /* Fundo do container */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+h1 {
+    color: #00ff99; /* Cor neon para o título */
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .input-container {
@@ -19,21 +37,26 @@ body {
 input {
     padding: 10px;
     margin: 5px;
-    border: 2px solid #ccc;
+    border: 2px solid #00ff99; /* Borda neon */
     border-radius: 5px;
+    background: #333; /* Fundo escuro para os inputs */
+    color: #e0e0e0; /* Texto claro */
+    font-size: 1em;
 }
 
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #00ff99; /* Cor neon para o botão */
+    color: #1e1e1e;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #00cc7a; /* Cor de fundo do botão ao passar o mouse */
 }
 
 .game-board {
@@ -42,26 +65,30 @@ button:hover {
     grid-template-columns: repeat(3, 100px);
     gap: 5px;
     margin: 20px auto;
+    max-width: 320px; /* Máxima largura para o tabuleiro */
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background-color: white;
-    border: 2px solid #ddd;
+    background-color: #333; /* Fundo escuro para as células */
+    border: 2px solid #00ff99; /* Borda neon */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
+    font-size: 2em;
+    color: #00ff99; /* Cor do texto neon */
     cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .cell:hover {
-    background-color: #f9f9f9;
+    background-color: #444; /* Fundo das células ao passar o mouse */
 }
 
 .message {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     margin-top: 20px;
+    color: #00ff99; /* Cor neon para mensagens */
 }
