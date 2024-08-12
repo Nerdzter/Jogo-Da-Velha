@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div class="input-container">
+            <input type="text" id="player1" placeholder="Nome do Jogador 1 (X)">
+            <input type="text" id="player2" placeholder="Nome do Jogador 2 (O)">
+            <button onclick="startGame()">Começar o Jogo</button>
+        </div>
+        <div class="game-board" id="gameBoard" style="display: none;">
+            <div class="row">
+                <div class="cell" onclick="makeMove(0, 0)"></div>
+                <div class="cell" onclick="makeMove(0, 1)"></div>
+                <div class="cell" onclick="makeMove(0, 2)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="makeMove(1, 0)"></div>
+                <div class="cell" onclick="makeMove(1, 1)"></div>
+                <div class="cell" onclick="makeMove(1, 2)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="makeMove(2, 0)"></div>
+                <div class="cell" onclick="makeMove(2, 1)"></div>
+                <div class="cell" onclick="makeMove(2, 2)"></div>
+            </div>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
