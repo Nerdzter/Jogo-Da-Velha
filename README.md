@@ -15,7 +15,7 @@ Este é um projeto simples de jogo da velha, desenvolvido com HTML, CSS e JavaSc
 
 2. **Acesse o diretório do projeto**
 
-    ```bash  
+  ```bash  
   cd Jogo-Da-Velha
 
 3. **Abra o arquivo index.html em um navegador**
